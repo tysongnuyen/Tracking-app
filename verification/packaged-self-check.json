@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "UI Automation COM bindings loaded",
+    "Hostname extraction, no path retention",
+    "Real Windows executable icon extracted with transparency",
+    "Native Windows Start Menu shortcut reader and app catalogue load without extra dependencies",
+    "Bundled handwritten Tracking wordmark and T icon load; Monitoring/Statistics navigation labels and native window branding are applied",
+    "Hover shows Start/Pause/Resume icons over time; leaving restores time without changing tracking; clicks perform the shown action",
+    "Search pill with internal placeholder, real query filtering, no focus caption in donut",
+    "Dark native GUI, left sidebar controls, removed footer/CSV, rounded scrollbar, donut/browser detail/search/back",
+    "Click calendar: leap day selection, year/month navigation, Today, future-day restriction and popup toggle",
+    "Comparison ranking/pie share 7-day totals; apps below 5% group into Other, exactly 5% stays separate, group click expands children with original percentages and search preserves totals; daily overview stays correct",
+    "Frozen notification adapter loads; Monday 08:00 fixture report triggers once, stays suppressed after restart and fits Windows text limits; no real notification sent",
+    "App limits GUI selects a named app/logo without a file picker, saves the name, receives 15/10/5-minute fixture warnings, exhausts by a child PID, disables immediately, preserves quota after restart and resets at midnight; process termination is mocked",
+    "Isolated UIA worker starts, responds and stops"
+  ],
+  "note": "Fixture data only. This is not a real-browser compatibility test."
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tracking App · Browser Bridge",
+  "version": "0.4.0",
+  "description": "Gửi tên miền của các tab đến Tracking App trên máy. Không gửi URL đầy đủ hoặc nội dung trang.",
+  "minimum_chrome_version": "120",
+  "permissions": ["tabs", "storage", "alarms"],
+  "host_permissions": ["http://127.0.0.1:43127/*","http://*/*","https://*/*"],
+  "content_scripts": [{"matches":["http://*/*","https://*/*"],"js":["visibility.js"],"run_at":"document_start","all_frames":false}],
+  "background": {"service_worker": "bridge.js"},
+  "action": {"default_title": "Kết nối Tracking App", "default_popup": "options.html"},
+  "options_page": "options.html",
+  "incognito": "not_allowed"
+}
